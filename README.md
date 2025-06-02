@@ -4,7 +4,7 @@ Este es un ejemplo de un archivo README con una imagen.
 
 ## Imagen de ejemplo
 
-![TALENTO TECH]([./Programación con Javascript/6 - Imagenes/imagenes/TALENTOTECH.png](https://github.com/bladimir251266/Desarrollo-Web-Full-Stack---B-sico---Talento-Tech/blob/b078a14f492d419b0f65641a35e39d23aaf00180/TALENTOTECH.png))
+![TALENTO TECH](https://github.com/bladimir251266/Desarrollo-Web-Full-Stack---B-sico---Talento-Tech/blob/392e7dc4aab3d0b5555cbd90c9b53755fcd8d695/TALENTOTECH.png)
 
 ## Cómo usar este proyecto
 
