@@ -1,0 +1,44 @@
+footer section {
+  border-radius: 5px;
+  background-color: #FFCCBC;
+  border: 2px solid #cacaca; }
+
+header {
+  background-color: #e6e6fa; }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+@media (max-width: 768px) {
+  header, main, footer {
+    font-size: 13px; } }
+
+body {
+  font-family: "Merriweather", serif;
+  margin: 5px; }
+
+nav {
+  background-color: #d8bfd8; }
+  nav ul li a {
+    text-decoration: none; }
+  nav ul li a:hover {
+    background-color: #e6e6fa; }
+
+div a {
+  text-decoration: none;
+  color: #000000; }
+
+div a:hover {
+  color: #000000; }
+
+/* Main Index */
+article .article1:hover, article .article2:hover {
+  transform: scale(1.01); }
+
+/* Main Login */
+.bgMain {
+  background-color: #FFCCBC; }
+
+footer {
+  background-image: linear-gradient(#e6e6fa, #bdbdbd); }

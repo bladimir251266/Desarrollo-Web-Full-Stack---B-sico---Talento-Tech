@@ -1,0 +1,174 @@
+//Cálculadas
+$ancho:800px;
+
+.ancho{
+    width: $ancho/2;
+    font-size: ($ancho*2)-1000;
+    margin:$ancho%2;
+}
+//+ suma
+//- resta
+// * multiplicación
+// / división
+// % resto
+
+//Condicionales 
+// $a == $b $a es igual a $b ?
+// $a != $b $a es distinto de $b? (<>)
+// $a < $b  $a es menor que $b?
+// $a > $b $a es mayor que $b?
+// <= >= menor igual o mayor igual
+// ! negación  
+
+$pagina: home;
+
+.boton{
+    border-radius: 15px;
+    width: 200px;
+    @if $pagina==galeria{
+        background-color: blue;
+    }
+    @else if $pagina==home{
+        background-color: red;
+    }
+    @else{
+        background-color: brown;
+    }
+}
+ 
+
+
+//Repetitivas from to|through
+
+@for $i from 1 through 6{
+
+    .h#{$i}{
+        font-size: 6em/$i;
+    }
+}
+
+//Each
+$medidas: 20px, 40px, 60px; //lista de elementos
+
+@each $elem in $medidas{
+    .tamanio-#{$elem}{
+        font-size:$elem;
+    }
+}
+
+@each $elem in $medidas{
+    .ancho-#{$elem}{
+        width:$elem;
+    }
+}
+
+//Mapeos
+
+$colores:(primary:blue, secondary:grey, danger:red);
+
+@each $tipo, $color in $colores{
+
+    .btn-#{$tipo}{
+        background-color: $color;
+    }
+}
+
+@each $tipo, $color in $colores{
+    .text-#{$tipo}{
+        color:$color;
+    }
+}
+
+//Extends
+.home{
+    width: 800px;
+    height: 400px;
+    background-color:red;
+}
+
+.galeria{
+    @extend .home;
+    background-color: blue;
+}
+
+.header__logo{
+    width: 200px;
+    height: 150px;
+}
+
+.footer__logo{
+    @extend .header__logo;
+}
+
+%boton{
+    border-radius: 15px;
+    width: 200px;
+}
+
+.boton-verde{
+    @extend %boton;
+    background-color: green;
+}
+
+.boton-rojo{
+    @extend %boton;
+    background-color: red;
+}
+
+//Crear una clase genérica para un div con width:800px y height:400px y extenderla cambiando color de fondo (modificadores) 
+
+//Mixins
+@mixin destacar($colorLetra, $colorFondo){
+    color:$colorLetra;
+    background-color: $colorFondo;
+}
+
+.main__parrafo{
+    @include destacar(red, yellow);
+    font-size:25px;
+    font-weight: bolder;
+}
+
+.footer__copy{
+    @include destacar(white, black);
+}
+//Crear un mixin para dar formato a imágenes
+
+
+
+
+//Problema: Mi página utiliza  tamaños específicos de divs para distintas secciones. Cada div posee un color a mi eleccion de una lista de colores. 
+//Si va a ser una seccion sobre jardines quiero que sea de fondo verde y color de letra blanca.
+//Sobre hogar: fondo anaranjado y letra negra
+// Sobre tecno: fondo azul y letra roja.
+// Si el tema no es ninguno de los anteriores: color rosado y letra amarilla
+// Los nombres de las clases y las medidas heigh y width quedan a mi criterio
+
+@mixin mimixin($ancho, $alto, $seccion, $nombre){
+
+    .#{$nombre}{
+        width:$ancho;
+        height: $alto;
+        @if $seccion==hogar{
+            background-color: orange;
+            color:black;
+        }
+        @else if $seccion==jardines{
+            background-color:green ;
+            color:white;
+        }
+        @else if $seccion==tecno{
+            background-color: blue;
+            color:red;
+        }
+        @else{
+            background-color: pink;
+            color:yellow;
+        }
+    }
+
+}
+
+@include mimixin(800px,400px,jardines, naturaleza);
+
+@include mimixin(900px, 500px, tecno, pcgamer);

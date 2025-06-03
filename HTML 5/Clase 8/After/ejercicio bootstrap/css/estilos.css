@@ -1,0 +1,44 @@
+
+
+header{
+    background-color: #264653;
+    color:white;
+    height: 15vh;
+}
+
+main article{
+    background-color:#e9c46a ;
+    color: white;
+}
+
+main aside{
+    background-color: #f4a261;
+    color:white;
+}
+
+section div{
+    background-color: #2a9d8f;
+    color:white;
+}
+
+footer{
+    background-color:#e76f51 ;
+    height: 15vh;
+    color:white;
+}
+
+.boton{
+    background-color: violet;
+    margin-top: 10px;
+}
+
+p{
+    margin:0;
+
+}
+
+.botonred{
+    background-color: red;
+    color:blue;
+    
+}

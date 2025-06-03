@@ -1,0 +1,93 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #264653;
+    color:white;
+    height: 15vh;
+}
+
+.header__boton{
+    border-radius: 25px;
+}
+
+.header__boton--verde{
+    background-color: green;
+}
+
+main article{
+    background-color:#e9c46a ;
+    color: white;
+}
+
+main aside{
+    background-color: #f4a261;
+    color:white;
+}
+
+section div{
+    background-color: #2a9d8f;
+    color:white;
+}
+
+footer{
+    background-color:#e76f51 ;
+    height: 15vh;
+    color:white;
+}
+
+.boton{
+    background-color: violet;
+    margin-top: 10px;
+}
+
+p{
+    margin:0;
+
+}
+
+.botonred{
+    background-color: red;
+    color:blue;
+    
+}
+
+
+
+/*Más de 990 px de ancho 4 divs en fila no landscape*/
+/*max-width: px   min-width:*/
+ @media (min-width:990px){
+     .principal{
+         display:flex;
+         flex-direction: row;
+         flex-wrap: nowrap;
+     }
+
+     .principal__articulo{
+        flex-basis:80%;
+     }
+
+     .principal__lateral{
+         flex-basis: 20%;
+     }
+
+     /*COMPLETAR PARA LG
+     
+        Faltan .seccion y los div de .seccion*/
+ }
+/*Entre 770 y 990 es de dos por dos no landscape*/
+/*max-width: px   min-width:*/
+@media (min-width: 770px) and (max-width: 990px){
+
+}
+
+/*770 para abajo es en fila no landscape*/
+@media(max-width:700px){
+
+    
+
+}
+

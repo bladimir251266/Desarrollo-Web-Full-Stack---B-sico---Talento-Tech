@@ -1,0 +1,14 @@
+/*regla css*/
+/*el selector en 
+este caso es body quiero modificar 
+sobre el las caracteristicas de detalla adentro*/
+body{ 
+    /*queremos cambiar fondo con el valor*/
+    background: #000 ; /*en hexadecimal o en black*/
+    /*se usa para darle color a la tipografia a la fuente*/
+    color: #fff;
+}
+
+/*esto son comentarios no se ejecuta te sirven de guía*/
+
+

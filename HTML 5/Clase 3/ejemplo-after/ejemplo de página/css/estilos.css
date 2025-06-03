@@ -1,0 +1,24 @@
+h1 {
+    color: #f67000;
+}
+
+h2 {
+    color: #f66f00b4;
+}
+
+p {
+    color: #caea9c;
+}
+
+ul {
+    color: rgb(46, 219, 30);
+}
+
+.precios {
+    color: brown;
+}
+
+.cabecera {
+    color: crimson;
+    background-color: darkgreen;
+}

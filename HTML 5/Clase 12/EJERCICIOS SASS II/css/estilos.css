@@ -1,0 +1,107 @@
+.ancho {
+  width: 400px;
+  font-size: 600px;
+  margin: 0px; }
+
+.boton {
+  border-radius: 15px;
+  width: 200px;
+  background-color: red; }
+
+.h1 {
+  font-size: 6em; }
+
+.h2 {
+  font-size: 3em; }
+
+.h3 {
+  font-size: 2em; }
+
+.h4 {
+  font-size: 1.5em; }
+
+.h5 {
+  font-size: 1.2em; }
+
+.h6 {
+  font-size: 1em; }
+
+.tamanio-20px {
+  font-size: 20px; }
+
+.tamanio-40px {
+  font-size: 40px; }
+
+.tamanio-60px {
+  font-size: 60px; }
+
+.ancho-20px {
+  width: 20px; }
+
+.ancho-40px {
+  width: 40px; }
+
+.ancho-60px {
+  width: 60px; }
+
+.btn-primary {
+  background-color: blue; }
+
+.btn-secondary {
+  background-color: grey; }
+
+.btn-danger {
+  background-color: red; }
+
+.text-primary {
+  color: blue; }
+
+.text-secondary {
+  color: grey; }
+
+.text-danger {
+  color: red; }
+
+.home, .galeria {
+  width: 800px;
+  height: 400px;
+  background-color: red; }
+
+.galeria {
+  background-color: blue; }
+
+.header__logo, .footer__logo {
+  width: 200px;
+  height: 150px; }
+
+.boton-verde, .boton-rojo {
+  border-radius: 15px;
+  width: 200px; }
+
+.boton-verde {
+  background-color: green; }
+
+.boton-rojo {
+  background-color: red; }
+
+.main__parrafo {
+  color: red;
+  background-color: yellow;
+  font-size: 25px;
+  font-weight: bolder; }
+
+.footer__copy {
+  color: white;
+  background-color: black; }
+
+.naturaleza {
+  width: 800px;
+  height: 400px;
+  background-color: green;
+  color: white; }
+
+.pcgamer {
+  width: 900px;
+  height: 500px;
+  background-color: blue;
+  color: red; }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probando animaciones</title>
+    <!--Una fuente de google-->>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap" rel="stylesheet"> 
+    <!--css de la librería AOS-->>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Mi css (siempre debajo de todos los css de librerías)-->
+    <link rel="stylesheet" href="styles/estilos.css">
+</head>
+<body>
+    <div class="banner">
+        Animaciones "SCROLLABLES"
+    </div>
+    <div class="contenedor">
+        <div class="contenedor2">
+            <div class="izquierda"><img src="images/paisaje1.jpg" alt=""></div>
+            <div class="derecha"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia corrupti itaque quos eaque fugiat incidunt id ipsa, nesciunt esse iusto cupiditate laborum nulla odit velit temporibus dolore veniam aliquid eos?</p>
+            </div>
+            <div class="fondo"></div>
+        
+        </div>
+        <div class="contenedor2">
+            <div class="izquierda wow jello"><img src="images/paisaje2.jpg" alt=""></div>
+            <div class="derecha wow backInRight"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum commodi sint atque. Modi ratione sint blanditiis rerum veritatis debitis ipsam unde, voluptas asperiores eaque quae maxime eos mollitia, repudiandae commodi?<p></div>
+            <div class="fondo"></div>
+        </div>
+        <div class="contenedor2">
+            <div class="izquierda "><img src="images/paisaje4.jpg" alt="" data-aos="flip-right"></div>
+            <div class="derecha"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum recusandae ea quisquam? Quas voluptatum labore, magni fugiat recusandae incidunt magnam illo unde cum, error similique architecto vel porro in quam?</p></div>
+            <div class="fondo"></div>
+        </div>
+    </div>
+    <!--Los script js de la librería AOS (Siempre antes de la etiqueta de cierre del body)-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
