@@ -1,4 +1,0 @@
- sume seo en el archivo contacto.html con las siguientes caracteristicas:
- titulo: en la etiqueta titulo, agregue el nombre de mi sitio y la seccion
- palabras clave: mediante la etiqueta meta, use descripcion de mi pagina("Esta es una pagina de trailers, destinado a personas que les guste las peliculas"), keywords con palabras clave que buscan los usuarios("Trailers, series, pelis, recomendacion de trailers"), autor con mi nombre y apellido
- Encabezado: en esta seccion use el h1 con el texto "CONTACTENOS"
